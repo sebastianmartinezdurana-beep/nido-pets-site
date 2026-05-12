@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIDO Pets — El Club de Paseos más Exclusivo de Panamá</title>
+  <meta name="description" content="Membresía de paseos premium para perros en Panamá. Grupos de máximo 8. 2 paseos diarios. Foto en cada salida por WhatsApp.">
+  <meta property="og:title" content="NIDO Pets — El Club de Paseos más Exclusivo de Panamá">
+  <meta property="og:description" content="Membresía de paseos premium para perros en Panamá. Grupos de máximo 8. Foto en cada salida.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;0,6..96,900;1,6..96,400;1,6..96,600&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══ LOADER ══════════════════════════════════════════════════ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <img src="img/logo.png" alt="NIDO Pets" class="loader-logo">
+      <div class="loader-bar-wrap"><div id="loader-bar"></div></div>
+      <div id="loader-percent">0%</div>
+      <span class="loader-hint">Preparando tu experiencia</span>
+    </div>
+  </div>
+
+  <!-- ══ SCROLL PROGRESS ════════════════════════════════════════ -->
+  <div id="scroll-progress"><div id="scroll-progress-bar"></div></div>
+
+  <!-- ══ HEADER ═════════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="NIDO Pets inicio">
+        <img src="img/logo.png" alt="NIDO Pets" class="nav-logo-img">
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#how">El proceso</a>
+        <a href="#testimonials">Testimonios</a>
+        <a href="#membership">Membresía</a>
+        <a href="https://wa.me/50760641305?text=Hola%2C%20quiero%20solicitar%20una%20membres%C3%ADa%20para%20mi%20perro%20en%20NIDO%20Pets." target="_blank" rel="noopener" class="nav-cta">Solicitar membresía</a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menú" aria-expanded="false">
+        <span class="hb-bar hb-bar--top"></span>
+        <span class="hb-bar hb-bar--bot"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ══ FLOATING WHATSAPP ══════════════════════════════════════ -->
+  <a class="wa-float" href="https://wa.me/50760641305?text=Hola%2C%20quiero%20solicitar%20una%20membres%C3%ADa%20para%20mi%20perro%20en%20NIDO%20Pets." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <div class="wa-float-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </div>
+    <span class="wa-float-label">Escríbenos</span>
+  </a>
+
+  <!-- ══ HERO ════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-label">PANAMÁ &nbsp;·&nbsp; MEMBRESÍAS ABIERTAS &nbsp;·&nbsp; 2025</div>
+      <h1 class="hero-heading">El paseo que<br><em>tu perro</em> merece.</h1>
+      <p class="hero-tagline">Dos veces al día. Grupos pequeños.<br>Una foto en cada salida.</p>
+      <a href="https://wa.me/50760641305?text=Hola%2C%20quiero%20solicitar%20una%20membres%C3%ADa%20para%20mi%20perro%20en%20NIDO%20Pets." class="hero-cta-btn" target="_blank" rel="noopener">
+        Solicitar membresía
+      </a>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse">
+        <div class="scroll-mouse-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══ COLOR ZONE BACKGROUND ════════════════════════════════ -->
+  <div id="bg-zone"    aria-hidden="true"></div>
+  <div id="zone-glow"  aria-hidden="true"></div>
+
+  <!-- ══ CANVAS ══════════════════════════════════════════════════ -->
+  <div class="canvas-wrap" id="canvas-wrap">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- ══ DARK OVERLAY ════════════════════════════════════════════ -->
+  <div id="dark-overlay"></div>
+
+  <!-- ══ MARQUEE ══════════════════════════════════════════════════ -->
+  <div class="marquee-wrap" id="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-text">NIDO PETS&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;PASEOS PREMIUM&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;PANAMÁ&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;MEMBRESÍA EXCLUSIVA&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;FOTOGRAFÍA EN CADA SALIDA&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;MÁXIMO 8 PERROS&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;CONFIANZA TOTAL&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;</div>
+    </div>
+  </div>
+
+  <!-- ══ SCROLL CONTAINER ═══════════════════════════════════════ -->
+  <div id="scroll-container">
+
+    <!-- 01 / EL RITUAL -->
+    <section class="scroll-section section-content align-left"
+             data-enter="1" data-leave="20" data-animation="slide-left">
+      <div class="section-inner">
+        <div class="section-inner-deco">01</div>
+        <span class="section-eyebrow">001 &nbsp;/&nbsp; El Ritual</span>
+        <h2 class="section-heading">Dos veces al día,<br>sin excepción.</h2>
+        <p class="section-body">A la hora acordada, con el mismo guía, con el mismo grupo pequeño. La rutina que tu perro espera cada mañana y cada tarde.</p>
+        <div class="section-rule"></div>
+        <span class="section-detail">Incluye fines de semana</span>
+      </div>
+    </section>
+
+    <!-- 02 / TRANSPARENCIA -->
+    <section class="scroll-section section-content align-right"
+             data-enter="22" data-leave="41" data-animation="slide-right">
+      <div class="section-inner section-inner--light">
+        <div class="section-inner-deco">02</div>
+        <span class="section-eyebrow">002 &nbsp;/&nbsp; Transparencia</span>
+        <h2 class="section-heading">Tú<br>ves todo.</h2>
+        <p class="section-body">Una foto por WhatsApp en cada salida. No como extra — como estándar. Porque la confianza no se negocia.</p>
+        <div class="section-rule"></div>
+        <span class="section-detail">Sin costo adicional · Sin excepciones</span>
+      </div>
+    </section>
+
+    <!-- 03 / STATS -->
+    <section class="scroll-section section-stats"
+             data-enter="43" data-leave="62" data-animation="stagger-up">
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-top">
+            <span class="stat-number" data-value="40" data-decimals="0">0</span>
+          </div>
+          <span class="stat-label">Paseos al mes</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-top">
+            <span class="stat-prefix">$</span>
+            <span class="stat-number" data-value="6.50" data-decimals="2">0</span>
+          </div>
+          <span class="stat-label">Por paseo</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-top">
+            <span class="stat-number" data-value="8" data-decimals="0">0</span>
+          </div>
+          <span class="stat-label">Perros máx. por grupo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 / FILOSOFÍA -->
+    <section class="scroll-section section-content align-left"
+             data-enter="64" data-leave="74" data-animation="scale-up">
+      <div class="section-inner">
+        <div class="section-inner-deco">04</div>
+        <span class="section-eyebrow">004 &nbsp;/&nbsp; Filosofía</span>
+        <h2 class="section-heading">Pequeño,<br>a propósito.</h2>
+        <p class="section-body">Máximo 8 perros por grupo. No es un límite de capacidad — es nuestra promesa de atención individual para cada miembro.</p>
+        <div class="section-rule"></div>
+        <span class="section-detail">Grupos cuidadosamente seleccionados</span>
+      </div>
+    </section>
+
+    <!-- 05 / CTA -->
+    <section class="scroll-section section-cta align-center"
+             data-enter="76" data-leave="98" data-animation="clip-reveal" data-persist="true">
+      <div class="section-inner section-inner--cta">
+        <div class="section-inner-deco">05</div>
+        <span class="section-eyebrow">005 &nbsp;/&nbsp; Únete</span>
+        <h2 class="section-heading">¿Listo para<br><em>unirte al nido?</em></h2>
+        <p class="section-body">$260 al mes · Sin permanencia.<br>Plazas limitadas en tu zona.</p>
+        <a href="https://wa.me/50760641305?text=Hola%2C%20quiero%20solicitar%20una%20membres%C3%ADa%20para%20mi%20perro%20en%20NIDO%20Pets." class="cta-button" target="_blank" rel="noopener">
+          Escribir por WhatsApp
+          <span class="cta-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+  </div>
+  <!-- end scroll-container -->
+
+  <!-- ══ MANIFESTO ════════════════════════════════════════════ -->
+  <section class="manifesto-section">
+    <div class="container">
+      <div class="manifesto-inner">
+        <span class="manifesto-label">NIDO &nbsp;·&nbsp; PANAMÁ &nbsp;·&nbsp; 2025</span>
+        <blockquote class="manifesto-text">
+          No caminamos perros.<br>
+          Cuidamos <em>miembros.</em>
+        </blockquote>
+        <p class="manifesto-sub">Cada grupo, cada guía, cada foto — elegidos a propósito.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ POST-SCROLL: EL PROCESO NIDO ══════════════════════════ -->
+  <section class="post-section how-section" id="how">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">El proceso</span>
+        <h2 class="post-heading">El proceso NIDO</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Conversamos</h3>
+          <p class="step-body">Cuéntanos sobre tu perro por WhatsApp. Sin formularios, sin complicaciones. Conocemos su personalidad antes de empezar.</p>
+          <a href="https://wa.me/50760641305?text=Hola%2C%20quiero%20solicitar%20una%20membres%C3%ADa%20para%20mi%20perro%20en%20NIDO%20Pets." class="step-link" target="_blank" rel="noopener">Escribir ahora →</a>
+        </div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Empezamos</h3>
+          <p class="step-body">Primera semana de adaptación incluida. Tu perro conoce al guía, al grupo y su nueva rutina a su propio ritmo.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Nos volvemos rutina</h3>
+          <p class="step-body">Membresía mensual activa. Foto en cada salida. El mismo guía, el mismo grupo, la misma tranquilidad — todos los días.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ POST-SCROLL: TESTIMONIOS ══════════════════════════════ -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Lo que dicen</span>
+        <h2 class="post-heading">Nuestros miembros</h2>
+      </div>
+    </div>
+
+    <div class="testimonials-stage" id="testimonials-stage">
+
+      <div class="testimonial-item">
+        <div class="testimonial-stars">✦ ✦ ✦ ✦ ✦</div>
+        <blockquote class="testimonial-quote">
+          Mi perra llega a casa feliz y cansada después de cada paseo. Eso no tiene precio.
+        </blockquote>
+        <div class="testimonial-author">
+          <span class="testimonial-name">María C.</span>
+          <span class="testimonial-sep">·</span>
+          <span class="testimonial-location">Costa del Este, Panamá</span>
+        </div>
+      </div>
+
+      <div class="testimonial-item">
+        <div class="testimonial-stars">✦ ✦ ✦ ✦ ✦</div>
+        <blockquote class="testimonial-quote">
+          La foto diaria me da una tranquilidad que ningún otro servicio me había dado. No lo cambio por nada.
+        </blockquote>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Roberto A.</span>
+          <span class="testimonial-sep">·</span>
+          <span class="testimonial-location">Obarrio, Panamá</span>
+        </div>
+      </div>
+
+      <div class="testimonial-item">
+        <div class="testimonial-stars">✦ ✦ ✦ ✦ ✦</div>
+        <blockquote class="testimonial-quote">
+          Probé tres servicios antes de NIDO. La diferencia en atención y profesionalismo no tiene comparación.
+        </blockquote>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Valeria M.</span>
+          <span class="testimonial-sep">·</span>
+          <span class="testimonial-location">Santa María, Panamá</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="testimonials-dots" id="testimonials-dots"></div>
+  </section>
+
+  <!-- ══ POST-SCROLL: MEMBRESÍA ═════════════════════════════════ -->
+  <section class="post-section pricing-section" id="membership">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Tu inversión</span>
+        <h2 class="post-heading">Tu membresía NIDO</h2>
+      </div>
+      <div class="pricing-layout">
+
+        <div class="pricing-card">
+          <div class="pricing-tag">Membresía completa</div>
+          <div class="pricing-price">
+            <span class="price-cur">$</span>
+            <span class="price-num">260</span>
+            <span class="price-period">/mes</span>
+          </div>
+          <p class="pricing-sub">$6.50 por paseo · 40 paseos al mes · 2 al día</p>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-list">
+            <li>2 paseos diarios de 1 hora</li>
+            <li>Foto en cada salida vía WhatsApp</li>
+            <li>Grupos de máximo 8 perros</li>
+            <li>El mismo guía, siempre</li>
+            <li>Sin contratos de permanencia</li>
+          </ul>
+          <a href="https://wa.me/50760641305?text=Hola%2C%20quiero%20solicitar%20una%20membres%C3%ADa%20para%20mi%20perro%20en%20NIDO%20Pets." class="cta-button cta-button--pricing" target="_blank" rel="noopener">
+            Solicitar mi lugar
+            <span class="cta-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="pricing-features-col">
+          <h3 class="features-title">Por qué elegir NIDO</h3>
+          <div class="feature-item">
+            <div class="feature-icon">✦</div>
+            <div>
+              <strong>El mismo guía, siempre</strong>
+              <p>Tu perro construye una relación real con su guía. No es un desconocido cada vez.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✦</div>
+            <div>
+              <strong>Sin contratos de permanencia</strong>
+              <p>Cancela cuando quieras. Confiamos en que te quedarás por la calidad, no por obligación.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✦</div>
+            <div>
+              <strong>Atención individual garantizada</strong>
+              <p>Máximo 8 perros por grupo. No somos una guardería masiva — somos un club selecto.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✦</div>
+            <div>
+              <strong>Transparencia absoluta</strong>
+              <p>Foto en cada salida, sin excepciones. Porque la confianza se construye con hechos.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-col footer-col--brand">
+          <img src="img/logo.png" alt="NIDO Pets" class="footer-logo">
+          <p class="footer-tagline">Cuidando a los que<br>más quieres.</p>
+        </div>
+
+        <div class="footer-col footer-col--contact">
+          <h4 class="footer-col-title">Contacto</h4>
+          <a href="https://wa.me/50760641305?text=Hola%2C%20quiero%20solicitar%20una%20membres%C3%ADa%20en%20NIDO%20Pets." class="footer-contact-link footer-wa-btn" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            +507 6064-1305
+          </a>
+          <a href="https://instagram.com/nidopets" class="footer-contact-link footer-ig-btn" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+            @nidopets
+          </a>
+          <p class="footer-city">Panamá, República de Panamá</p>
+        </div>
+
+        <div class="footer-col footer-col--nav">
+          <h4 class="footer-col-title">Navegación</h4>
+          <nav class="footer-nav">
+            <a href="#how">El proceso</a>
+            <a href="#testimonials">Testimonios</a>
+            <a href="#membership">Membresía</a>
+            <a href="https://wa.me/50760641305" target="_blank" rel="noopener">WhatsApp</a>
+          </nav>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 NIDO Pets &nbsp;·&nbsp; Panamá &nbsp;·&nbsp; Todos los derechos reservados</p>
+      </div>
+    </div>
+
+    <div class="footer-wordmark" aria-hidden="true">NIDO</div>
+  </footer>
+
+  <!-- Custom cursor (hidden on touch devices via CSS) -->
+  <div class="cursor-dot"  id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

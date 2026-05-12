@@ -1,0 +1,32 @@
+# Environment variables
+.env
+.env.*
+
+# Large video source files
+*.mp4
+*.mov
+*.avi
+
+# Claude Code internal files
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Misc project files (not part of the site)
+Excalidraw Style Images/
+Nano Banano/
+Nate's Frontend Design/
+Web Design CLAUDE.md/
+brand-assets/
+images/
+projects/
+prompts/
+scripts/
+gemini.md
+master_prompt_reference.md
+preview_frame.jpg
